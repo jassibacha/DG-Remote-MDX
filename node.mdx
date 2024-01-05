@@ -1,0 +1,30 @@
+---
+title: 'Node.js: Powering the Backend with JavaScript'
+date: '2024-01-03'
+tags: ['coding', 'Node.js', 'backend development']
+---
+
+JavaScript has come a long way from being solely a front-end language. With Node.js, you can harness the power of JavaScript on the server-side, enabling you to build fast and scalable backend applications.
+
+```jsx
+const express = require('express');
+const app = express();
+
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+  const data = {
+    title: 'Welcome to Node.js',
+    message: 'Build powerful backend applications with JavaScript.',
+  };
+  res.render('index', data);
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+```
+
+Node.js's non-blocking, event-driven architecture makes it ideal for building real-time applications, APIs, and microservices. It's no surprise that many companies, including Netflix and PayPal, have adopted Node.js for their backend development.
+
+Whether you're building RESTful APIs, handling WebSocket connections, or creating full-stack applications, Node.js empowers you to leverage your JavaScript skills on both the client and server sides. Join the Node.js community and explore the endless possibilities of server-side JavaScript development.
